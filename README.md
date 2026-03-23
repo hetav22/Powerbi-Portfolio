@@ -16,6 +16,12 @@ An interactive, multi-page Power BI report built to analyze retail business perf
 
 ---
 
+## 📥 Download Report
+
+[Download .pbix file](./Retail_Analytics.pbix)
+
+---
+
 ## 📁 Data Source
 
 **Source:** Multiple Excel files loaded into Power BI Desktop.
