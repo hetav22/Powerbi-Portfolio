@@ -16,8 +16,6 @@ An interactive, multi-page Power BI report built to analyze retail business perf
 
 ---
 
-## 📥 Download / View 
-
 [![Power BI PBIX](https://img.shields.io/badge/Power%20BI-Download%20.pbix-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://github.com/hetav22/Powerbi-Portfolio/blob/6e6bc2f6d1a9cbb4370b6dfbe0a229dd868caa72/Retail%20Analytics%20Dashboard.pbix)
 [![Power BI PDF](https://img.shields.io/badge/Power%20BI-View%20PDF-EC1C24?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://github.com/hetav22/Powerbi-Portfolio/blob/6bed17e0afd95fb4053e07d940ed8d509aed543f/Retail%20Analytics%20Dashboard.pdf)
 [![Data Sources](https://img.shields.io/badge/Data-Sources-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/drive/u/2/folders/1xw0f_hayLHVRD76xYzO1ATXCFrJeunv0)
@@ -128,6 +126,12 @@ Key visuals:
 ## 📸 Screenshot
 
 <img width="1276" height="717" alt="image" src="https://github.com/user-attachments/assets/2d03cf24-5022-4b32-9239-658427ce931b" />
+
+---
+
+[![Back to Main](https://img.shields.io/badge/←%20Back%20to-Main%20Portfolio-2D333B?style=for-the-badge)](../../tree/main)
+
+---
 
 ---
 
