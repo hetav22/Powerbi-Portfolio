@@ -4,8 +4,8 @@ A capstone analytics project analyzing over 1 million retail transactions to unc
 
 ---
 
-[![Power BI PBIX](https://img.shields.io/badge/Power%20BI-Download%20.pbix-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](your-pbix-link)
-[![Power BI PDF](https://img.shields.io/badge/Power%20BI-View%20PDF-EC1C24?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](your-pdf-link)
+[![Power BI PBIT](https://img.shields.io/badge/Power%20BI-Download%20.pbit-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://github.com/hetav22/Powerbi-Portfolio/blob/3703ea2a92f4ae657037a507217f751c6eeb48cb/Retail%20Growth%20%E2%80%93%20Sales%20%26%20Consumer%20Behavior.pbit)
+[![Power BI PDF](https://img.shields.io/badge/Power%20BI-View%20PDF-EC1C24?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://github.com/hetav22/Powerbi-Portfolio/blob/3703ea2a92f4ae657037a507217f751c6eeb48cb/Retail%20Growth%20%E2%80%93%20Sales%20%26%20Consumer%20Behavior.pdf)
 [![Data Sources](https://img.shields.io/badge/Data-Sources-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/drive/u/2/folders/1gBdAR_grfNnnqXVEeU44Q1sJT06i8a_M)
 
 ---
@@ -19,7 +19,7 @@ A capstone analytics project analyzing over 1 million retail transactions to unc
 | 📂 Power Query | Data transformation and preparation |
 | 🧠 DAX | Calculated KPIs and measures |
 | 📦 Libraries | `pandas`, `numpy`, `scipy`, `statsmodels`, `matplotlib`, `seaborn` |
-| 📁 File Format | `.pbix` for dashboard, `.ipynb` for Python analysis, `.png` for previews |
+| 📁 File Format | `.pbit` for dashboard, `.pdf` for previews |
 
 ---
 
@@ -38,8 +38,6 @@ The dataset contains transaction-level retail data covering:
 
 **Sample size used for analysis:** 1M+ transactions (120,000 sampled for ANOVA testing)
 
-> Raw dataset files are hosted externally due to size.
-> [Download Dataset (Google Drive)](your-drive-link)
 
 ---
 
