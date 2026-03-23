@@ -12,7 +12,7 @@ A collection of data analytics and visualization projects built using Power BI, 
 | 4 | Logistics Intelligence Dashboard | [PROJECT_4](https://github.com/hetav22/Powerbi-Portfolio/blob/PROJECT_4/README.md) | 5-page Power BI report across 14 datasets with star schema and advanced DAX |
 
 ## Tools & Skills
-Power BI · DAX · Python · Microsoft Excel · KNIME
+Power BI · DAX · Python · Microsoft Excel 
 
 ## Navigation
 Each project is in its own branch. Switch branches to explore individual projects and their files.
