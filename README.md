@@ -1,12 +1,12 @@
-# 📱 Analyzing Effectiveness of Influencer Marketing
+# 🛍️ Understanding Retail Growth: A Data-Driven Look at Sales and Consumer Behavior
 
-An interactive Power BI report built to evaluate the financial performance of a fashion brand's influencer marketing program — analyzing ROI, revenue vs cost, customer lifetime value, and audience profiling across influencers, campaigns, and channels.
+A capstone analytics project analyzing over 1 million retail transactions to uncover key revenue drivers, customer behavior patterns, discount effectiveness, and seasonal demand trends — combining Python-based statistical analysis with interactive Power BI dashboards.
 
 ---
 
-[![Power BI PBIX](https://img.shields.io/badge/Power%20BI-Download%20.pbix-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://github.com/hetav22/Powerbi-Portfolio/blob/cfee25b3820eecb99fde51fe84d22d820d380936/Influencer%20Marketing%20Effectiveness.pbix)
-[![Power BI PDF](https://img.shields.io/badge/Power%20BI-View%20PDF-EC1C24?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://github.com/hetav22/Powerbi-Portfolio/blob/cfee25b3820eecb99fde51fe84d22d820d380936/Influencer%20Marketing%20Effectiveness.pdf)
-[![Data Sources](https://img.shields.io/badge/Data-Sources-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/drive/u/2/folders/1RPskOG6I6CBFGLh3t3lZgim3pa3WHvCU)
+[![Power BI PBIT](https://img.shields.io/badge/Power%20BI-Download%20.pbit-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://github.com/hetav22/Powerbi-Portfolio/blob/3703ea2a92f4ae657037a507217f751c6eeb48cb/Retail%20Growth%20%E2%80%93%20Sales%20%26%20Consumer%20Behavior.pbit)
+[![Power BI PDF](https://img.shields.io/badge/Power%20BI-View%20PDF-EC1C24?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://github.com/hetav22/Powerbi-Portfolio/blob/3703ea2a92f4ae657037a507217f751c6eeb48cb/Retail%20Growth%20%E2%80%93%20Sales%20%26%20Consumer%20Behavior.pdf)
+[![Data Sources](https://img.shields.io/badge/Data-Sources-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/drive/u/2/folders/1gBdAR_grfNnnqXVEeU44Q1sJT06i8a_M)
 
 ---
 
@@ -14,28 +14,29 @@ An interactive Power BI report built to evaluate the financial performance of a 
 
 | Tool | Purpose |
 |------|---------|
-| 📊 Power BI Desktop | Main platform for report creation and visualization |
-| 📂 Power Query | Data cleaning, transformation, and preparation |
-| 🧠 DAX (Data Analysis Expressions) | Calculated measures, KPIs, ROI and LTV metrics |
-| 🔗 Data Modeling | Relationships across campaign, influencer, product, and customer tables |
-| 📁 File Format | `.pbix` for development, `.pdf` for dashboard previews |
+| 🐍 Python | Statistical analysis — ANOVA, t-test, RFM segmentation, seasonality decomposition |
+| 📊 Power BI Desktop | Interactive dashboard creation and visualization |
+| 📂 Power Query | Data transformation and preparation |
+| 🧠 DAX | Calculated KPIs and measures |
+| 📦 Libraries | `pandas`, `numpy`, `scipy`, `statsmodels`, `matplotlib`, `seaborn` |
+| 📁 File Format | `.pbit` for dashboard, `.pdf` for previews |
 
 ---
 
 ## 📁 Data Source
 
-**Source:** Kaggle — Synthetic influencer marketing campaign dataset for the fashion industry
+**Source:** Kaggle — Large Retail Dataset for Exploratory Data Analysis (EDA)
 
-> Dataset link: [Influencer Marketing Campaign Analysis – Kaggle](https://www.kaggle.com/datasets/divyamehulmak/influencer-marketing-campaign-analysis-power-bi)
+The dataset contains transaction-level retail data covering:
 
-The dataset covers multiple campaigns from 2024–2025 and includes:
+- **Sales & Revenue** – Transaction date, quantity, unit price, gross and net revenue
+- **Discounts** – Discount applied per transaction, categorized into Very Low / Low / Medium levels
+- **Products** – Product categories: Clothing, Electronics, Furniture, Groceries, Toys
+- **Customers** – Customer IDs, transaction count (new vs repeat), demographics
+- **Geography** – State-level regional data
+- **Time** – Transaction dates, month, quarter, year for time-series analysis
 
-- **Campaign Data** – Campaign IDs, start/end dates, budget, cost, revenue, conversion rate targets
-- **Influencer Profiles** – Influencer IDs, names, tier levels, channel/platform
-- **Order Data** – Total amount, average order value (AOV), lifetime value (LTV)
-- **Customer Demographics** – Age group, gender, city/location, new vs returning status
-
-Data types include categorical (IDs, names), numerical (revenue, cost, budget), dates, and percentage metrics.
+**Sample size used for analysis:** 1M+ transactions (120,000 sampled for ANOVA testing)
 
 
 ---
@@ -43,96 +44,118 @@ Data types include categorical (IDs, names), numerical (revenue, cost, budget), 
 ## ✨ Features & Highlights
 
 ### 🔴 Business Problem
-Brands investing in influencer marketing often lack clarity on which influencers, campaigns, and channels actually deliver returns. Key questions like:
-- What is the overall ROI of the influencer program?
-- Which influencers generate the highest revenue and profitability?
-- Do different channels affect how much customers spend?
-- Which customer segments are most loyal and valuable?
-
-…are difficult to answer without a structured analytical approach.
+Retailers generate massive volumes of transactional data but often lack structured methods to answer:
+- Do discounts actually increase revenue, or just erode margins?
+- Are repeat customers more valuable than new ones?
+- Are there significant seasonal patterns that should drive inventory and promotional planning?
+- Which customer segments are at risk of churning?
 
 ### 🎯 Goal of the Dashboard
-To deliver an interactive Power BI report that:
-- Evaluates financial performance of the influencer marketing program
-- Identifies high-ROI and high-LTV influencers worth long-term investment
-- Profiles the customer base to support targeted marketing decisions
-- Surfaces campaign-level differences in order value and customer lifetime value
+To deliver a 2-page Power BI dashboard — backed by rigorous Python statistical testing — that:
+- Identifies key revenue drivers across product categories, discount levels, and regions
+- Segments customers using RFM analysis to support targeted retention strategies
+- Surfaces seasonal and monthly demand patterns for operational planning
+- Quantifies retention risk across new vs repeat customer groups
 
 ---
 
-### 📄 Walkthrough of Key Pages
+### 🔬 Statistical Analysis (Python)
 
-#### Page 1 — Influencer Effectiveness
-**KPIs:** Total Revenue (~352.85M), Average ROI (~296₹)
+#### 1. Discount Impact on Sales — Two-Way ANOVA + Tukey HSD
+
+**Test:** Two-Way ANOVA on Net Revenue ~ Discount Level × Product Category
+
+| Source | Result | Decision |
+|--------|--------|----------|
+| Discount Level | Significant (p < 0.05) | Reject H0 — discount level significantly affects net revenue |
+| Product Category | Not Significant | Retain H0 — categories perform similarly |
+| Discount × Category Interaction | Not Significant | Discounts have a universal effect across all product categories |
+
+**Tukey HSD Post-Hoc:** All pairwise comparisons (Very Low vs Low vs Medium) are statistically significant. As discount level increases, average net revenue per transaction **decreases** — confirming that heavier discounts hurt margins without proportionally boosting volume.
+
+---
+
+#### 2. Repeat vs New Customers — Independent Samples t-Test
+
+**Test:** t-Test on Net Revenue between Repeat and New customers
+
+| Statistic | p-value | Decision |
+|-----------|---------|----------|
+| 0.879 | 0.379 | Fail to reject H0 — no significant revenue difference between customer types |
+
+Average transaction value is not significantly different between new and repeat customers. However, repeat customers show lower churn risk and contribute the majority of total revenue through higher purchase frequency.
+
+---
+
+#### 3. Seasonal Trends — One-Way ANOVA + Decomposition
+
+**Test:** One-Way ANOVA on Net Revenue across 12 months
+
+| F-statistic | p-value | Decision |
+|-------------|---------|----------|
+| — | 0.002132 | Reject H0 — monthly net revenue varies significantly across the year |
+
+Seasonality decomposition (additive model, period=12) confirms a recurring seasonal component in sales, with identifiable peak and low-demand months.
+
+---
+
+### 📄 Walkthrough of Dashboard Pages
+
+#### Page 1 — Revenue Drivers & Demand Analysis
+**KPI:** Total Revenue (1.88bn)
 
 Key visuals:
-- **ROI Line Chart** – A small group of influencers deliver extremely high ROI; most others taper off sharply — classic power-law distribution
-- **Conversions Treemap** – BeautyBuzz, SustainableChic, and VintageFinds dominate total conversions
-- **Revenue vs Cost Bar Chart** – BeautyBuzz and SustainableChic show revenue bars far above their cost bars, confirming strong profitability
-- **Detailed Stats Table** – BeautyBuzz leads in total revenue (~81M); smaller influencers like BudgetStylist show higher ROI efficiency but lower absolute reach
+- **Revenue by Product Category (Horizontal Bar Chart)** – Balanced contribution across Clothing, Electronics, Furniture, Groceries, and Toys — no single category dominates
+- **Discount vs Revenue (Bubble/Scatter Chart)** – Revenue increases from Very Low to Medium discount levels, but growth is not proportional — heavy discounting provides diminishing returns
+- **Seasonality Strength (Quarter-wise Matrix Table)** – Highlights seasonal revenue patterns by product category across all four quarters
+- **Monthly Demand Evolution (Line Chart)** – Tracks revenue month-by-month; identifies consistent peak and low-demand periods
 
-**Key Insight:** There's a clear trade-off — some influencers are revenue giants but expensive; others are cheap and highly efficient but limited in scale.
+**Key Insights:**
+- Revenue is diversified across categories, reducing business risk
+- Moderate discounts outperform heavy discounting — margin discipline is critical
+- Seasonal patterns are statistically significant and should drive inventory and promotional planning
 
 ---
 
-#### Page 2 — Influencer Value Analysis
+#### Page 2 — Customer Analytics: Retention & Segmentation Strategy
+**KPIs:** Total Customers (1M), Average Transaction Value (₹1.88K)
+
 Key visuals:
-- **Influencer vs Customer LTV (Bar Chart)** – MinimalistMan and BudgetStylist bring in customers with the highest lifetime value; StyleSensei and VintageFinds are at the lower end
-- **Influencer vs AOV (Bar Chart)** – BudgetStylist, MinimalistMan, and TheStreetLook drive the highest average order value per transaction
+- **Retention Risk Index (Bar Chart)** – New customers have significantly higher churn risk vs repeat customers
+- **Revenue by Customer Type (Bar Chart)** – Repeat customers contribute the majority of total revenue
+- **RFM Segment Behavioral Profile (Table)** – Detailed Recency, Frequency, and Monetary values for Champions, Loyal Customers, At-Risk, and New Customer segments
+- **Segment Share of Total Customers (Donut Chart)** – Visual distribution of customers across all RFM segments
 
-**Key Insight:** Certain influencers consistently attract customers who spend more per order and return more often — these are the highest-priority partnerships.
-
----
-
-#### Page 3 — Customer Profile & Segmentation
-Key visuals:
-- **Top Customer Profiles Table** – Highest LTV customers are mainly 45+, often male, preferring luxury, formal, or streetwear styles
-- **Age Group Bar Chart** – 25–34 is the dominant segment, followed by 18–24 and 35–44
-- **Gender Donut Chart** – Male, female, and "other" customers are nearly evenly split (~1/3 each)
-- **New vs Returning Customers Pie Chart** – Returning customers make up the vast majority, indicating strong loyalty
-- **Location Map** – Customers cluster around major Indian cities in the north, west, and south
-
-**Key Insight:** Core audience is 18–34, urban, gender-balanced, and highly loyal. Older customers (45+) are fewer but premium in value.
-
----
-
-### 📊 Statistical Analysis (ANOVA Results)
-
-One-Way ANOVA tests were run to determine whether channels, influencers, and campaigns significantly affect customer spending:
-
-| Test | Result |
-|------|--------|
-| Total Amount vs Channel | p ≈ 0 → Significant. Instagram delivers the highest average order value. |
-| Total Amount vs Influencer ID | p ≈ 0 → Significant. INF003, INF019, INF020, INF004 drive higher basket sizes. |
-| Total Amount vs Campaign ID | p ≈ 0 → Significant. CMP006, CMP009, CMP001 average ~₹4,200–4,250 vs overall avg of ~₹3,529. |
-| LTV & AOV vs Campaign ID | p ≈ 0 → Significant. CMP006, CMP001, CMP007, CMP009 show higher LTV and AOV. |
-
-All four null hypotheses rejected — influencer choice, campaign structure, and channel all significantly impact customer spending and lifetime value.
+**Key Insights:**
+- Champions and Loyal Customers generate the highest monetary value and purchase frequency
+- A significant share of customers fall in "Need Attention" and "New Customer" segments — engagement strategies needed
+- New customers have higher churn risk; converting them to repeat buyers is the highest-ROI retention strategy
 
 ---
 
 ### 📈 Business Impact & Insights
 
-- **Budget Allocation:** Concentrate spend on high-ROI influencers (BeautyBuzz, SustainableChic) and top campaigns (CMP006, CMP001, CMP009); exit or renegotiate low-performers
-- **Channel Strategy:** Instagram is the primary performance channel for revenue and AOV; TikTok and YouTube better suited for awareness
-- **Customer Retention:** Large base of returning customers — loyalty and personalization programs are justified investments
-- **Premium Targeting:** Older, high-LTV customers (45+) should be targeted with luxury and formal ranges; 18–34 segment needs aspirational but accessible positioning
-- **Discounting:** Basket size differences are driven by influencer and campaign quality, not heavy discounting — price discipline should be maintained
+- **Discount Strategy:** Moderate discounting (not heavy) is optimal — verified statistically. Excessive discounts reduce net revenue per transaction without significantly increasing volume.
+- **Customer Retention:** Repeat customers drive majority revenue despite no statistical difference in individual transaction value — frequency is the key differentiator.
+- **Seasonal Planning:** Monthly demand fluctuations are statistically significant — inventory, staffing, and promotions should align with identified peak months.
+- **RFM Segmentation:** Enables precise marketing budget allocation — invest in Champions and Loyal Customers, re-engage At-Risk segments, convert New Customers.
+- **Regional Performance:** Revenue is stable across states — no over-reliance on a specific geography.
 
 ---
 
 ## 📸 Screenshot
 
-<img width="1148" height="642" alt="image" src="https://github.com/user-attachments/assets/be00964f-b98b-4002-8d6e-1e18b302c477" />
+<img width="1428" height="786" alt="Screenshot 2026-03-23 184740" src="https://github.com/user-attachments/assets/a1268bd0-b196-4930-8e16-c556fc479c6e" />
 
 
 ---
 
 ## ⚠️ Limitations
 
-- Dataset is synthetic — findings may not generalize directly to real campaigns
-- Short time window (2024–2025) limits long-term trend analysis
-- TikTok inclusion is inconsistent given its ban in India during this period
+- Based on secondary data from Kaggle — findings may not generalize directly to real retail businesses
+- Dataset uses synthetic/uniform distributions which may understate real-world variance
+- Analysis is descriptive and diagnostic — no predictive modeling included
+- Qualitative factors (brand perception, customer satisfaction) are not captured
 
 ---
 
