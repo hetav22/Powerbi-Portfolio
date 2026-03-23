@@ -12,7 +12,7 @@ An interactive, multi-page Power BI report built to analyze retail business perf
 | 📂 Power Query | Data cleaning, transformation, and shaping |
 | 🧠 DAX (Data Analysis Expressions) | Calculated measures, KPIs, and time intelligence |
 | 🔗 Data Modeling | Star schema linking Sales (fact) to Products, Stores, Customers, and Dates (dimensions) |
-| 📁 File Format | `.pbix`,`.pbit` for development, `.png` for dashboard previews |
+| 📁 File Format | `.pbix`,`.pbit` for development, `.pdf` for dashboard previews |
 
 ---
 
