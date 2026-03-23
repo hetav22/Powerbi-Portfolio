@@ -52,7 +52,7 @@ Built an interactive Power BI report covering sales performance, customer segmen
 Analyzed a fashion brand's influencer marketing program using Power BI and statistical ANOVA testing. Evaluated ROI, revenue vs cost, customer lifetime value (LTV), and average order value (AOV) across influencers, campaigns, and channels.
 
 **Highlights:**
-- Total Revenue: 352.85M · Avg ROI: 296₹
+- Total Revenue: 352.85M · Avg ROI: 296$
 - BeautyBuzz and SustainableChic identified as top-performing influencers
 - Instagram delivers highest AOV; all ANOVA tests significant (p ≈ 0)
 
@@ -82,7 +82,7 @@ Applied Two-Way ANOVA, t-tests, RFM segmentation, and seasonality decomposition 
 Built a comprehensive logistics intelligence report covering fleet utilization, driver safety, fuel cost optimization, and financial profitability. Designed a star-schema relational model and implemented advanced DAX measures including safety scoring, utilization rate, and profit per mile.
 
 **Highlights:**
-- Total Revenue: 298.62M · Gross Profit: 197.30M · Profit per Mile: ₹1.62
+- Total Revenue: 298.62M · Gross Profit: 197.30M · Profit per Mile: $1.62
 - Fleet Utilization: 83% · Fuel Cost: 95.59M (largest expense driver)
 - DOT violations identified as primary cause of delivery delays
 
