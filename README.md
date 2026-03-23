@@ -136,3 +136,6 @@ All four null hypotheses rejected — influencer choice, campaign structure, and
 
 ---
 
+[![Back to Main](https://img.shields.io/badge/←%20Back%20to-Main%20Portfolio-2D333B?style=for-the-badge)](../../tree/main)
+
+---
