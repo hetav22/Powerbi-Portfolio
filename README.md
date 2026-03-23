@@ -4,8 +4,8 @@ An interactive Power BI report built to evaluate the financial performance of a 
 
 ---
 
-[![Power BI PBIX](https://img.shields.io/badge/Power%20BI-Download%20.pbix-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](your-pbix-link)
-[![Power BI PDF](https://img.shields.io/badge/Power%20BI-View%20PDF-EC1C24?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](your-pdf-link)
+[![Power BI PBIX](https://img.shields.io/badge/Power%20BI-Download%20.pbix-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://github.com/hetav22/Powerbi-Portfolio/blob/cfee25b3820eecb99fde51fe84d22d820d380936/Influencer%20Marketing%20Effectiveness.pbix)
+[![Power BI PDF](https://img.shields.io/badge/Power%20BI-View%20PDF-EC1C24?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://github.com/hetav22/Powerbi-Portfolio/blob/cfee25b3820eecb99fde51fe84d22d820d380936/Influencer%20Marketing%20Effectiveness.pdf)
 [![Data Sources](https://img.shields.io/badge/Data-Sources-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/drive/u/2/folders/1RPskOG6I6CBFGLh3t3lZgim3pa3WHvCU)
 
 ---
@@ -18,7 +18,7 @@ An interactive Power BI report built to evaluate the financial performance of a 
 | 📂 Power Query | Data cleaning, transformation, and preparation |
 | 🧠 DAX (Data Analysis Expressions) | Calculated measures, KPIs, ROI and LTV metrics |
 | 🔗 Data Modeling | Relationships across campaign, influencer, product, and customer tables |
-| 📁 File Format | `.pbix` for development, `.png` for dashboard previews |
+| 📁 File Format | `.pbix` for development, `.pdf` for dashboard previews |
 
 ---
 
@@ -37,8 +37,6 @@ The dataset covers multiple campaigns from 2024–2025 and includes:
 
 Data types include categorical (IDs, names), numerical (revenue, cost, budget), dates, and percentage metrics.
 
-> Raw dataset files are hosted externally due to size.
-> [Download Dataset (Google Drive)](your-drive-link)
 
 ---
 
@@ -123,9 +121,10 @@ All four null hypotheses rejected — influencer choice, campaign structure, and
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshot
 
-> *(Add dashboard page screenshots here)*
+<img width="1148" height="642" alt="image" src="https://github.com/user-attachments/assets/be00964f-b98b-4002-8d6e-1e18b302c477" />
+
 
 ---
 
@@ -137,6 +136,3 @@ All four null hypotheses rejected — influencer choice, campaign structure, and
 
 ---
 
-## 🔗 Navigation
-
-Each project in this portfolio is in its own branch. Switch to the relevant branch to explore files, `.pbix`, and previews for each dashboard.
