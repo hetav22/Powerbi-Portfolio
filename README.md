@@ -24,10 +24,10 @@ built using Power BI, DAX, Python, and Excel.
 
 | # | Project | Domain | Key Tools | Branch |
 |---|---------|--------|-----------|--------|
-| 01 | [Optimizing Retail Operations](#-01--optimizing-retail-operations) | Retail Analytics | Power BI · DAX · Power Query | [→ project-1](../../tree/project-1) |
-| 02 | [Influencer Marketing Effectiveness](#-02--influencer-marketing-effectiveness) | Marketing Analytics | Power BI · DAX · Excel | [→ project-2](../../tree/project-2) |
-| 03 | [Retail Growth: Sales & Consumer Behavior](#-03--retail-growth-sales--consumer-behavior) | Consumer Analytics | Python · Power BI · SPSS | [→ project-3](../../tree/project-3) |
-| 04 | [Logistics Intelligence Dashboard](#-04--logistics-intelligence-dashboard) | Logistics & Operations | Power BI · DAX · Star Schema | [→ project-4](../../tree/project-4) |
+| 01 | Optimizing Retail Operations | Retail Analytics | Power BI · DAX · Power Query | [P-1](https://github.com/hetav22/Powerbi-Portfolio/blob/PROJECT_1/README.md) |
+| 02 | Influencer Marketing Effectiveness | Marketing Analytics | Power BI · DAX · Excel | [P-2](https://github.com/hetav22/Powerbi-Portfolio/blob/PROJECT_2/README.md) |
+| 03 | Retail Growth: Sales & Consumer Behavior | Consumer Analytics | Python · Power BI · SPSS | [P-3](https://github.com/hetav22/Powerbi-Portfolio/blob/PROJECT_3/README.md) |
+| 04 | Logistics Intelligence Dashboard | Logistics & Operations | Power BI · DAX · Star Schema | [P-4](https://github.com/hetav22/Powerbi-Portfolio/blob/PROJECT_4/README.md) |
 
 ---
 
@@ -42,7 +42,7 @@ Built an interactive Power BI report covering sales performance, customer segmen
 - Regional revenue breakdown, payment mode analysis, discount impact
 - Customer loyalty segmentation and age-group revenue comparison
 
-[![View Project](https://img.shields.io/badge/View%20Project-project--1-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](../../tree/project-1)
+[![View Project](https://img.shields.io/badge/View%20Project-project--1-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://github.com/hetav22/Powerbi-Portfolio/blob/PROJECT_1/README.md)
 
 ---
 
@@ -57,7 +57,7 @@ Analyzed a fashion brand's influencer marketing program using Power BI and stati
 - BeautyBuzz and SustainableChic identified as top-performing influencers
 - Instagram delivers highest AOV; all ANOVA tests significant (p ≈ 0)
 
-[![View Project](https://img.shields.io/badge/View%20Project-project--2-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](../../tree/project-2)
+[![View Project](https://img.shields.io/badge/View%20Project-project--2-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://github.com/hetav22/Powerbi-Portfolio/blob/PROJECT_2/README.md)
 
 ---
 
@@ -72,7 +72,7 @@ Applied Two-Way ANOVA, t-tests, RFM segmentation, and seasonality decomposition 
 - Moderate discounts outperform heavy discounting — statistically validated
 - RFM segmentation identifies Champions, Loyal, At-Risk, and New segments
 
-[![View Project](https://img.shields.io/badge/View%20Project-project--3-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](../../tree/project-3)
+[![View Project](https://img.shields.io/badge/View%20Project-project--3-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://github.com/hetav22/Powerbi-Portfolio/blob/PROJECT_3/README.md)
 
 ---
 
@@ -87,7 +87,7 @@ Built a comprehensive logistics intelligence report covering fleet utilization, 
 - Fleet Utilization: 83% · Fuel Cost: 95.59M (largest expense driver)
 - DOT violations identified as primary cause of delivery delays
 
-[![View Project](https://img.shields.io/badge/View%20Project-project--4-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](../../tree/project-4)
+[![View Project](https://img.shields.io/badge/View%20Project-project--4-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://github.com/hetav22/Powerbi-Portfolio/blob/PROJECT_4/README.md)
 
 ---
 
