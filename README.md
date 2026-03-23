@@ -117,7 +117,7 @@ Key visuals:
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshot
 
 <img width="1276" height="717" alt="image" src="https://github.com/user-attachments/assets/2d03cf24-5022-4b32-9239-658427ce931b" />
 
