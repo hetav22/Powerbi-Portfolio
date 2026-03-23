@@ -104,7 +104,7 @@ One-Way ANOVA tests were run to determine whether channels, influencers, and cam
 |------|--------|
 | Total Amount vs Channel | p ≈ 0 → Significant. Instagram delivers the highest average order value. |
 | Total Amount vs Influencer ID | p ≈ 0 → Significant. INF003, INF019, INF020, INF004 drive higher basket sizes. |
-| Total Amount vs Campaign ID | p ≈ 0 → Significant. CMP006, CMP009, CMP001 average ~₹4,200–4,250 vs overall avg of ~₹3,529. |
+| Total Amount vs Campaign ID | p ≈ 0 → Significant. CMP006, CMP009, CMP001 average ~$4,200–4,250 vs overall avg of ~$3,529. |
 | LTV & AOV vs Campaign ID | p ≈ 0 → Significant. CMP006, CMP001, CMP007, CMP009 show higher LTV and AOV. |
 
 All four null hypotheses rejected — influencer choice, campaign structure, and channel all significantly impact customer spending and lifetime value.
