@@ -1,18 +1,136 @@
-# Power BI Portfolio
+# 🛒 Optimizing Retail Operations: Advanced Insights from Power BI Dashboard Analytics
 
-A collection of data analytics and visualization projects built using Power BI, DAX, Python, and Excel.
+An interactive, multi-page Power BI report built to analyze retail business performance across sales, customers, products, and time — enabling data-driven decisions through visual KPIs, drill-downs, and cross-filtering.
 
-## Projects
+---
 
-| # | Project |  Branch  | Description |
-|---|---------|----------|-------------|
-| 1 | Retail Analytics Dashboard | [PROJECT_1](https://github.com/hetav22/Powerbi-Portfolio/blob/PROJECT_1/README.md) | Interactive Power BI dashboard with KPIs and trend analysis on retail data |
-| 2 | Influencer Marketing Effectiveness | [PROJECT_2](https://github.com/hetav22/Powerbi-Portfolio/blob/PROJECT_2/README.md) | Big data analysis on influencer campaign performance and audience engagement |
-| 3 | Retail Growth – Sales & Consumer Behavior | [PROJECT_3](https://github.com/hetav22/Powerbi-Portfolio/blob/PROJECT_3/README.md) | 1M+ transaction analysis using Python (RFM, ANOVA) + Power BI dashboard |
-| 4 | Logistics Intelligence Dashboard | [PROJECT_4](https://github.com/hetav22/Powerbi-Portfolio/blob/PROJECT_4/README.md) | 5-page Power BI report across 14 datasets with star schema and advanced DAX |
+## 🛠️ Tech Stack
 
-## Tools & Skills
-Power BI · DAX · Python · Microsoft Excel 
+| Tool | Purpose |
+|------|---------|
+| 📊 Power BI Desktop | Main platform for report creation and visualization |
+| 📂 Power Query | Data cleaning, transformation, and shaping |
+| 🧠 DAX (Data Analysis Expressions) | Calculated measures, KPIs, and time intelligence |
+| 🔗 Data Modeling | Star schema linking Sales (fact) to Products, Stores, Customers, and Dates (dimensions) |
+| 📁 File Format | `.pbix`,`.pbit` for development, `.png` for dashboard previews |
 
-## Navigation
-Each project is in its own branch. Switch branches to explore individual projects and their files.
+---
+
+[![Power BI PBIX](https://img.shields.io/badge/Power%20BI-Download%20.pbix-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://github.com/hetav22/Powerbi-Portfolio/blob/6e6bc2f6d1a9cbb4370b6dfbe0a229dd868caa72/Retail%20Analytics%20Dashboard.pbix)
+[![Power BI PDF](https://img.shields.io/badge/Power%20BI-View%20PDF-EC1C24?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://github.com/hetav22/Powerbi-Portfolio/blob/6bed17e0afd95fb4053e07d940ed8d509aed543f/Retail%20Analytics%20Dashboard.pdf)
+[![Data Sources](https://img.shields.io/badge/Data-Sources-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/drive/u/2/folders/1xw0f_hayLHVRD76xYzO1ATXCFrJeunv0)
+
+---
+
+## 📁 Data Source
+
+**Source:** Multiple Excel files loaded into Power BI Desktop.
+
+The dataset covers a retail business with the following tables:
+
+- **Sales** – Core transactional data: date, store, product, quantity, and amount
+- **Products** – Product IDs, names, categories, sub-categories, brands, cost and selling price
+- **Stores** – Store IDs, names, cities, regions, and managers
+- **Customers** – Customer IDs, demographics (age group, gender, city), and loyalty/activity status
+- **Dates** – Calendar dimension with year, quarter, month, weekday/weekend flags for time intelligence
+
+Relationships are established via `ProductID`, `StoreID`, `CustomerID`, and `Date` keys in a one-to-many structure from dimension tables to the Sales fact table.
+
+---
+
+## ✨ Features & Highlights
+
+### 🔴 Business Problem
+Retail businesses generate large volumes of transactional data across stores, products, and customers — but lack a quick, intuitive way to diagnose performance issues or spot opportunities. Key questions like:
+- Which regions and product categories are most profitable?
+- Which customer segments drive the most revenue?
+- Are discounts actually boosting sales?
+- How does performance shift across time and seasons?
+
+…are hard to answer from raw spreadsheets alone.
+
+### 🎯 Goal of the Dashboard
+To deliver a 5-page interactive Power BI report that:
+- Converts raw retail data into actionable visual insights
+- Supports decisions across sales, marketing, inventory, and customer management
+- Enables drill-down exploration by time, region, category, and customer segment
+
+---
+
+### 📄 Walkthrough of Key Pages
+
+#### Page 1 — Sales & Revenue Overview
+**KPIs:** Total Sales (230.47M), Profit Margin (24.7%), Transactions (500K), Avg Sale (₹460.93)
+
+Key visuals:
+- **Revenue by Region (Donut Chart)** – North and West lead; East and Central lag, pointing to marketing and distribution gaps
+- **Sales Trend Over Time (Line Chart)** – Tracks monthly performance; peaks align with seasonal demand
+- **Payment Mode (Donut Chart)** – UPI leads, followed by Cash; card and wallet usage is low
+- **Region-Wise Sales Breakdown (Bar Chart)** – Compares profit across geographic zones
+
+---
+
+#### Page 2 — Customer Analysis
+**KPIs:** Total Customers (15K), Loyalty vs Non-loyalty split, Avg Revenue per Customer & Store
+
+Key visuals:
+- **Sales by Age Group (Bar Chart)** – Ages 21–60 contribute the majority of revenue
+- **Members Comparison (Bar Chart)** – Loyalty vs non-loyalty member performance
+- **Revenue by Gender (Donut Chart)** – Balanced across genders; "Other" category also contributes
+- **City-Wise Customer Sales (Map)** – Urban centres dominate; some cities show strong growth potential
+
+---
+
+#### Page 3 — Product Performance
+**KPIs:** Quantity Sold (884K units), Avg Selling Price (₹266.67), Revenue (230.47M), Profit (56.93M)
+
+Key visuals:
+- **Sales & Profit Margin % by Category (Bar + Line)** – Personal Care, Snacks, and Household items lead sales; Beverages and Staples have lower margins
+- **Profit by Category (Bar Chart)** – Absolute profit comparison; Bakery underperforms relative to sales
+- **Top Products by Revenue (Table)** – Shampoos, cleaning products, and grocery staples top the list
+- **Quantity Sold by Brand (Bar Chart)** – Britannia, Mother Dairy, and Modern Bakery stand out in volume
+
+---
+
+#### Page 4 — Time Series & Seasonality
+**KPIs:** Total Sales, YTD Profit, Avg Daily Sales (315K)
+
+Key visuals:
+- **Monthly Sales Comparison (Bar Chart)** – Consistent performance with identifiable slow months
+- **Quarterly Performance (Donut Chart)** – Q4 slightly leads, likely driven by festive season demand
+- **Year-over-Year Comparison (Stacked Bar)** – 2024 vs 2023 monthly comparison to track growth
+- **Weekday vs Weekend (Bar Chart)** – Weekdays significantly outperform weekends
+
+---
+
+#### Page 5 — Advanced Insights
+**KPIs:** Transaction Count, Avg Discount % (0.02%), Profit Margin (24.7%), Revenue per Transaction
+
+Key visuals:
+- **Discount % Impact on Sales (Scatter Plot)** – High discounts show minimal effect on volume; pricing discipline is effective
+- **Profit by Payment Mode (Bar Chart)** – UPI and Cash generate the highest profit
+- **Customer Segment Profitability (Bar Chart)** – Loyalty members and mid-age segments (31–50) are most profitable
+
+---
+
+### 📈 Business Impact & Insights
+
+- **Sales Strategy:** Moderate discounting outperforms heavy discounting — price discipline maintained at 24.7% margin
+- **Customer Retention:** Loyalty program has room to grow; non-loyalty members still outnumber loyalty members
+- **Regional Focus:** North and West are strong markets; East and Central need targeted interventions
+- **Inventory Planning:** Weekday demand patterns and Q4 seasonality can directly guide stock and staffing decisions
+- **Payment Optimization:** UPI and Cash dominate profit — digital-first checkout improvements are justified
+
+---
+
+## 📸 Screenshot
+
+<img width="1276" height="717" alt="image" src="https://github.com/user-attachments/assets/2d03cf24-5022-4b32-9239-658427ce931b" />
+
+---
+
+[![Back to Main](https://img.shields.io/badge/←%20Back%20to-Main%20Portfolio-2D333B?style=for-the-badge)](../../tree/main)
+
+---
+
+
