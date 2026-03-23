@@ -138,7 +138,7 @@ Key visuals:
 ---
 
 #### Page 5 — Financial Deep-Dive
-**KPIs:** Gross Profit (197.30M), Profit per Mile (₹1.62), Total Expenses (101.32M)
+**KPIs:** Gross Profit (197.30M), Profit per Mile (1.62), Total Expenses (101.32M)
 
 Key visuals:
 - **Revenue vs Expenses Trend (Area Chart)** – Revenue consistently exceeds expenses across all months
