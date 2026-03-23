@@ -177,6 +177,4 @@ Key visuals:
 [![Back to Main](https://img.shields.io/badge/←%20Back%20to-Main%20Portfolio-2D333B?style=for-the-badge)](../../tree/main)
 
 ---
-## 🔗 Navigation
 
-Each project in this portfolio is in its own branch. Switch to the relevant branch to explore files, `.pbix`, and dashboard previews.
