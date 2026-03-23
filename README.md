@@ -63,7 +63,7 @@ To deliver an interactive Power BI report that:
 ### 📄 Walkthrough of Key Pages
 
 #### Page 1 — Influencer Effectiveness
-**KPIs:** Total Revenue (~352.85M), Average ROI (~296₹)
+**KPIs:** Total Revenue (~352.85M), Average ROI (~296)
 
 Key visuals:
 - **ROI Line Chart** – A small group of influencers deliver extremely high ROI; most others taper off sharply — classic power-law distribution
