@@ -15,7 +15,6 @@ built using Power BI, DAX, Python, and Excel.
 ![DAX](https://img.shields.io/badge/DAX-F2C811?style=flat-square&logo=powerbi&logoColor=black)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Microsoft Excel](https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white)
-![KNIME](https://img.shields.io/badge/KNIME-FFD700?style=flat-square&logoColor=black)
 ![Power Query](https://img.shields.io/badge/Power%20Query-F2C811?style=flat-square&logo=powerbi&logoColor=black)
 
 ---
