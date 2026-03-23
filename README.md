@@ -1,12 +1,12 @@
-# 🛍️ Understanding Retail Growth: A Data-Driven Look at Sales and Consumer Behavior
+# 🚛 Logistics Intelligence Dashboard: Advanced Visualization, Insights & Operational Strategy
 
-A capstone analytics project analyzing over 1 million retail transactions to uncover key revenue drivers, customer behavior patterns, discount effectiveness, and seasonal demand trends — combining Python-based statistical analysis with interactive Power BI dashboards.
+A 5-page interactive Power BI report built to analyze transportation and fleet operations — integrating 14 logistics datasets across trips, drivers, vehicles, fuel, maintenance, and safety to deliver executive-level insights on operational efficiency, cost control, driver performance, and financial profitability.
 
 ---
 
-[![Power BI PBIT](https://img.shields.io/badge/Power%20BI-Download%20.pbit-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://github.com/hetav22/Powerbi-Portfolio/blob/3703ea2a92f4ae657037a507217f751c6eeb48cb/Retail%20Growth%20%E2%80%93%20Sales%20%26%20Consumer%20Behavior.pbit)
-[![Power BI PDF](https://img.shields.io/badge/Power%20BI-View%20PDF-EC1C24?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://github.com/hetav22/Powerbi-Portfolio/blob/3703ea2a92f4ae657037a507217f751c6eeb48cb/Retail%20Growth%20%E2%80%93%20Sales%20%26%20Consumer%20Behavior.pdf)
-[![Data Sources](https://img.shields.io/badge/Data-Sources-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/drive/u/2/folders/1gBdAR_grfNnnqXVEeU44Q1sJT06i8a_M)
+[![Power BI PBIX](https://img.shields.io/badge/Power%20BI-Download%20.pbix-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://github.com/hetav22/Powerbi-Portfolio/blob/d610b0784700da1cc44a7a343924a63e899bf75a/Logistics%20Intelligence%20Dashboard.pbix)
+[![Power BI PDF](https://img.shields.io/badge/Power%20BI-View%20PDF-EC1C24?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://github.com/hetav22/Powerbi-Portfolio/blob/d610b0784700da1cc44a7a343924a63e899bf75a/Logistics%20Intelligence%20Dashboard.pdf)
+[![Data Sources](https://img.shields.io/badge/Data-Sources-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/drive/u/2/folders/1uDcRTD-CkiaF6yCEXfiBgXyuJ7VFaAfD)
 
 ---
 
@@ -14,29 +14,38 @@ A capstone analytics project analyzing over 1 million retail transactions to unc
 
 | Tool | Purpose |
 |------|---------|
-| 🐍 Python | Statistical analysis — ANOVA, t-test, RFM segmentation, seasonality decomposition |
-| 📊 Power BI Desktop | Interactive dashboard creation and visualization |
-| 📂 Power Query | Data transformation and preparation |
-| 🧠 DAX | Calculated KPIs and measures |
-| 📦 Libraries | `pandas`, `numpy`, `scipy`, `statsmodels`, `matplotlib`, `seaborn` |
-| 📁 File Format | `.pbit` for dashboard, `.pdf` for previews |
+| 📊 Power BI Desktop | Main platform for report creation and visualization |
+| 📂 Power Query | Data cleaning, transformation, and calculated field creation |
+| 🧠 DAX (Data Analysis Expressions) | Advanced KPIs using CALCULATE, DIVIDE, SWITCH, VAR, MAXX |
+| 🔗 Data Modeling | Star-schema relational model linking 14 datasets |
+| 📁 File Format | `.pbix` for development, `.pdf` for dashboard previews |
 
 ---
 
 ## 📁 Data Source
 
-**Source:** Kaggle — Large Retail Dataset for Exploratory Data Analysis (EDA)
+**Source:** Multiple structured Excel datasets covering logistics and fleet operations.
 
-The dataset contains transaction-level retail data covering:
+14 interconnected datasets integrated in Power BI:
 
-- **Sales & Revenue** – Transaction date, quantity, unit price, gross and net revenue
-- **Discounts** – Discount applied per transaction, categorized into Very Low / Low / Medium levels
-- **Products** – Product categories: Clothing, Electronics, Furniture, Groceries, Toys
-- **Customers** – Customer IDs, transaction count (new vs repeat), demographics
-- **Geography** – State-level regional data
-- **Time** – Transaction dates, month, quarter, year for time-series analysis
+| Dataset | Purpose |
+|---------|---------|
+| Trips | Trip-level journey details — distance, duration, completion status |
+| Loads | Shipment data — weight, origin, destination, revenue |
+| Customers | Customer profiles — demand patterns, service performance |
+| Drivers | Driver profiles — experience, assignments |
+| Driver Monthly Metrics | Monthly productivity — trips completed, hours worked |
+| Trucks | Fleet details — capacity, type, operational status |
+| Trailers | Trailer usage and availability |
+| Truck Utilization Metrics | Utilization rates and idle time per vehicle |
+| Fuel Purchases | Fuel quantity, cost, and purchase date |
+| Maintenance Records | Repair history, cost, and frequency per vehicle |
+| Routes | Route distance and efficiency data |
+| Delivery Events | Real-time delivery status — dispatched, delayed, completed |
+| Safety Incidents | Accidents, DOT violations, compliance events |
+| Facilities | Depot and warehouse operational data |
 
-**Sample size used for analysis:** 1M+ transactions (120,000 sampled for ANOVA testing)
+All tables are connected via a **star-schema** with one-to-many relationships from dimension tables (Customers, Drivers, Trucks, Routes, Date) to fact tables (Trips, Loads, Fuel, Maintenance, Safety Incidents).
 
 
 ---
@@ -44,121 +53,128 @@ The dataset contains transaction-level retail data covering:
 ## ✨ Features & Highlights
 
 ### 🔴 Business Problem
-Retailers generate massive volumes of transactional data but often lack structured methods to answer:
-- Do discounts actually increase revenue, or just erode margins?
-- Are repeat customers more valuable than new ones?
-- Are there significant seasonal patterns that should drive inventory and promotional planning?
-- Which customer segments are at risk of churning?
+Transportation and logistics companies manage complex, multi-source operational data but lack a unified view to monitor performance across drivers, fleet, costs, and delivery reliability. Key questions like:
+- What is the overall fleet utilization and profitability?
+- Which drivers and routes are underperforming or high-risk?
+- Where are operational bottlenecks causing delivery delays?
+- How much do fuel and maintenance costs impact margins?
+
+…are difficult to diagnose without integrated visual analytics.
 
 ### 🎯 Goal of the Dashboard
-To deliver a 2-page Power BI dashboard — backed by rigorous Python statistical testing — that:
-- Identifies key revenue drivers across product categories, discount levels, and regions
-- Segments customers using RFM analysis to support targeted retention strategies
-- Surfaces seasonal and monthly demand patterns for operational planning
-- Quantifies retention risk across new vs repeat customer groups
+To deliver a 5-page Power BI report that:
+- Provides executives with a real-time operational command center
+- Identifies driver compliance and safety risks
+- Surfaces fleet and fuel cost inefficiencies
+- Enables financial deep-dive by route, destination, and time period
 
 ---
 
-### 🔬 Statistical Analysis (Python)
+### 🧠 Key DAX Measures
 
-#### 1. Discount Impact on Sales — Two-Way ANOVA + Tukey HSD
-
-**Test:** Two-Way ANOVA on Net Revenue ~ Discount Level × Product Category
-
-| Source | Result | Decision |
-|--------|--------|----------|
-| Discount Level | Significant (p < 0.05) | Reject H0 — discount level significantly affects net revenue |
-| Product Category | Not Significant | Retain H0 — categories perform similarly |
-| Discount × Category Interaction | Not Significant | Discounts have a universal effect across all product categories |
-
-**Tukey HSD Post-Hoc:** All pairwise comparisons (Very Low vs Low vs Medium) are statistically significant. As discount level increases, average net revenue per transaction **decreases** — confirming that heavier discounts hurt margins without proportionally boosting volume.
-
----
-
-#### 2. Repeat vs New Customers — Independent Samples t-Test
-
-**Test:** t-Test on Net Revenue between Repeat and New customers
-
-| Statistic | p-value | Decision |
-|-----------|---------|----------|
-| 0.879 | 0.379 | Fail to reject H0 — no significant revenue difference between customer types |
-
-Average transaction value is not significantly different between new and repeat customers. However, repeat customers show lower churn risk and contribute the majority of total revenue through higher purchase frequency.
-
----
-
-#### 3. Seasonal Trends — One-Way ANOVA + Decomposition
-
-**Test:** One-Way ANOVA on Net Revenue across 12 months
-
-| F-statistic | p-value | Decision |
-|-------------|---------|----------|
-| — | 0.002132 | Reject H0 — monthly net revenue varies significantly across the year |
-
-Seasonality decomposition (additive model, period=12) confirms a recurring seasonal component in sales, with identifiable peak and low-demand months.
+| Measure | Logic |
+|---------|-------|
+| **Utilization Rate** | Total miles ÷ (trucks × days × 450 miles/day benchmark) |
+| **Safety Score** | 100 − (incidents ÷ trips × 1000) |
+| **Incident Rate** | Incidents per 100,000 miles driven |
+| **On-Time Rate** | On-time deliveries ÷ total deliveries |
+| **Fuel CPM** | Total fuel cost ÷ total miles |
+| **Profit per Mile** | Gross profit ÷ total miles |
+| **Asset Velocity** | Total trips ÷ distinct trucks |
+| **Driver Rating Stars** | SWITCH on Safety Score → 1–5 star rating |
+| **Repeat Customer %** | Customers with multiple loads ÷ total unique customers |
+| **Turnover Rate** | Terminated drivers ÷ total drivers |
 
 ---
 
 ### 📄 Walkthrough of Dashboard Pages
 
-#### Page 1 — Revenue Drivers & Demand Analysis
-**KPI:** Total Revenue (1.88bn)
+#### Page 1 — Executive Command Center
+**KPIs:** Total Revenue (298.62M), Total Miles (122M), Fleet Utilization (83%), Safety Score, Avg Trip Duration
 
 Key visuals:
-- **Revenue by Product Category (Horizontal Bar Chart)** – Balanced contribution across Clothing, Electronics, Furniture, Groceries, and Toys — no single category dominates
-- **Discount vs Revenue (Bubble/Scatter Chart)** – Revenue increases from Very Low to Medium discount levels, but growth is not proportional — heavy discounting provides diminishing returns
-- **Seasonality Strength (Quarter-wise Matrix Table)** – Highlights seasonal revenue patterns by product category across all four quarters
-- **Monthly Demand Evolution (Line Chart)** – Tracks revenue month-by-month; identifies consistent peak and low-demand periods
-
-**Key Insights:**
-- Revenue is diversified across categories, reducing business risk
-- Moderate discounts outperform heavy discounting — margin discipline is critical
-- Seasonal patterns are statistically significant and should drive inventory and promotional planning
+- **Monthly Revenue Trend (Line Chart)** – Stable revenue with minor fluctuations indicating consistent demand
+- **Revenue by Region (Geographic Heatmap)** – Bubble map showing regional revenue concentration
+- **Top Customer Revenue (Treemap)** – A few key customers drive a major share of total revenue — concentration risk identified
+- **Fleet Health Matrix (Table)** – Vehicle make vs MPG, utilization %, and maintenance cost comparison
+- **On-Time Delivery (Gauge Chart)** – Performance at 0.45 — below optimal benchmark, indicating service reliability gap
 
 ---
 
-#### Page 2 — Customer Analytics: Retention & Segmentation Strategy
-**KPIs:** Total Customers (1M), Average Transaction Value (₹1.88K)
+#### Page 2 — Operations & Driver Performance
+Key visuals:
+- **Delay Reason Analysis (Bar Chart)** – DOT violations (26 cases) are the leading delay cause, followed by accidents and customer complaints
+- **On-Time Delivery Performance (Gauge)** – Below benchmark; route optimization needed
+- **Facility Bottlenecks (Horizontal Bar)** – Certain facilities show significantly higher detention hours
+- **Booking Type Revenue Split (Donut)** – Dedicated and contract bookings dominate; spot bookings are secondary
+- **Load Weight Distribution (Histogram)** – Consistent load patterns; heavy outliers require special planning
+- **Revenue by Segment (Line Chart)** – Automotive and Consumer Goods consistently outperform other freight segments
+
+---
+
+#### Page 3 — Driver Performance & Compliance
+Key visuals:
+- **Driver KPI Scorecard** – Revenue contribution, avg MPG, and star safety rating per driver
+- **Safety Incidents by Driver (Stacked Bar)** – A small group of drivers accounts for a disproportionate share of incidents
+- **Incident Type Breakdown (Treemap)** – DOT violations and accidents are the most frequent incident types
+- **Monthly Performance Trend (Line Chart)** – Revenue and miles stable; MPG shows slight fluctuation
+- **Incident Volume by Month (Column Chart)** – Preventable vs non-preventable incident split over time
+
+**Key Insight:** Avg MPG across drivers is ~6.50. Preventable incidents form a significant portion of total incidents — driver training is a high-ROI intervention.
+
+---
+
+#### Page 4 — Fleet, Fuel & Cost Optimization
+**KPIs:** Total Fuel Cost (95.59M), Maintenance Cost (5.73M), Fleet Avg MPG
 
 Key visuals:
-- **Retention Risk Index (Bar Chart)** – New customers have significantly higher churn risk vs repeat customers
-- **Revenue by Customer Type (Bar Chart)** – Repeat customers contribute the majority of total revenue
-- **RFM Segment Behavioral Profile (Table)** – Detailed Recency, Frequency, and Monetary values for Champions, Loyal Customers, At-Risk, and New Customer segments
-- **Segment Share of Total Customers (Donut Chart)** – Visual distribution of customers across all RFM segments
+- **Fuel Cost vs Miles Driven (Bar + Line)** – Fuel consumption tracks directly with operational activity
+- **Asset Status Breakdown (Donut)** – Majority active; portion inactive or under maintenance
+- **Fleet Avg MPG (Gauge)** – Stable but limited improvement over time
+- **Maintenance Cost by Category (Donut)** – Both routine and emergency repairs contribute significantly
+- **Under-Utilized Assets (Table)** – Trucks with high idle days and lower revenue contribution identified
+- **Monthly Asset Velocity Trend (Line Chart)** – Declining trend in recent months signals operational slowdown
 
-**Key Insights:**
-- Champions and Loyal Customers generate the highest monetary value and purchase frequency
-- A significant share of customers fall in "Need Attention" and "New Customer" segments — engagement strategies needed
-- New customers have higher churn risk; converting them to repeat buyers is the highest-ROI retention strategy
+---
+
+#### Page 5 — Financial Deep-Dive
+**KPIs:** Gross Profit (197.30M), Profit per Mile (₹1.62), Total Expenses (101.32M)
+
+Key visuals:
+- **Revenue vs Expenses Trend (Area Chart)** – Revenue consistently exceeds expenses across all months
+- **Profitability by Destination (Bubble Map)** – High- and low-margin routes identified geographically
+- **Monthly Financial Scorecard (Table)** – Month-by-month breakdown of revenue, fuel, maintenance, gross profit, and profit per mile
+- **Fuel vs Maintenance Cost Split (Donut)** – Fuel dominates at 95.59M vs maintenance at 5.73M
 
 ---
 
 ### 📈 Business Impact & Insights
 
-- **Discount Strategy:** Moderate discounting (not heavy) is optimal — verified statistically. Excessive discounts reduce net revenue per transaction without significantly increasing volume.
-- **Customer Retention:** Repeat customers drive majority revenue despite no statistical difference in individual transaction value — frequency is the key differentiator.
-- **Seasonal Planning:** Monthly demand fluctuations are statistically significant — inventory, staffing, and promotions should align with identified peak months.
-- **RFM Segmentation:** Enables precise marketing budget allocation — invest in Champions and Loyal Customers, re-engage At-Risk segments, convert New Customers.
-- **Regional Performance:** Revenue is stable across states — no over-reliance on a specific geography.
+- **Revenue & Profitability:** 298.62M revenue, 197.30M gross profit, 1.62 profit per mile — financially healthy with controlled expenses
+- **Fleet Efficiency:** 83% utilization rate; several trucks identified with high idle days — reallocation opportunity
+- **Fuel Cost Control:** Fuel is the single largest cost driver (95.59M) — route optimization and MPG improvement are highest-ROI interventions
+- **Delivery Reliability:** On-time rate at 0.45 — below benchmark; DOT violations and facility bottlenecks are primary root causes
+- **Driver Safety:** Preventable incidents are significant — targeted compliance training can reduce incidents and associated fines
+- **Customer Concentration:** A few customers drive majority revenue — diversification is a strategic priority
 
 ---
 
-## 📸 Screenshot
+## 📸 Screenshots
 
-<img width="1428" height="786" alt="Screenshot 2026-03-23 184740" src="https://github.com/user-attachments/assets/a1268bd0-b196-4930-8e16-c556fc479c6e" />
+<img width="1455" height="830" alt="image" src="https://github.com/user-attachments/assets/01de51e4-2b9f-4061-a1ed-6375cf547abc" />
 
 
 ---
 
 ## ⚠️ Limitations
 
-- Based on secondary data from Kaggle — findings may not generalize directly to real retail businesses
-- Dataset uses synthetic/uniform distributions which may understate real-world variance
-- Analysis is descriptive and diagnostic — no predictive modeling included
-- Qualitative factors (brand perception, customer satisfaction) are not captured
+- Analysis is historical only — no predictive modeling or forecasting included
+- External factors (fuel price volatility, market conditions) not incorporated
+- Dataset scope limited to available operational variables; qualitative factors not captured
 
 ---
 
 [![Back to Main](https://img.shields.io/badge/←%20Back%20to-Main%20Portfolio-2D333B?style=for-the-badge)](../../tree/main)
 
 ---
+
