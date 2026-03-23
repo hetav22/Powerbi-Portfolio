@@ -18,7 +18,7 @@ An interactive, multi-page Power BI report built to analyze retail business perf
 
 ## 📥 Download Report
 
-[![Power BI](https://img.shields.io/badge/Power%20BI-Report-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](your-pbix-or-drive-link)
+[![Power BI](https://img.shields.io/badge/Power%20BI-Report-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://github.com/hetav22/Powerbi-Portfolio/blob/6e6bc2f6d1a9cbb4370b6dfbe0a229dd868caa72/Retail%20Analytics%20Dashboard.pbix)
 
 ---
 
